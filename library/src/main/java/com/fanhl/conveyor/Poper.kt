@@ -14,5 +14,11 @@ interface Poper {
         fun addInputStater(stater: Stater)
 
         fun onInput(data: Int)
+
+        fun onOutput(onOutput: OnOutput)
+    }
+
+    interface OnOutput {
+        fun action(data: Int)
     }
 }
